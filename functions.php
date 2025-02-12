@@ -11,15 +11,9 @@
         $check = checkdate($month, $day, $year);
         return $check;
     }
-    // function check_future_date ( string $date )
-    // {
-    //     $tomorrow_ts = strtotime("+1 day", date('Y-m-d'));
-    //     $date_ts = strtotime($date);
-    //     return $date_ts < $tomorrow_ts;
-    // }
     function declension ( int $digit, array $expr, $onlyword = false ) {
-        if ( !is_array($expr) ) {
-            $expr = array_filter(explode(' ', $expr));
+        if ( empty($expr[1]) ) {
+            return false;
         }
         if ( empty($expr[2]) ) {
             $expr[2] = $expr[1];

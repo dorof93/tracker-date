@@ -4,6 +4,7 @@ body {
     max-width: 1350px;
     font-family: sans-serif;
     font-size: 14px;
+    padding: 0px 10px;
 }
 header {
     margin-bottom: 40px;
@@ -75,4 +76,13 @@ h1 {
     font-size:16px;
     line-height:20px;
     padding:14px 20px
+  }
+  @media (max-width: 767px) {
+  
+    .form {
+        display: block;
+    }
+    .form__field {
+        margin-bottom: 30px;
+    }
   }
