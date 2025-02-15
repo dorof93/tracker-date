@@ -37,4 +37,3 @@
         $res = $digit . ' ' . $res;
         return trim($res);
     }
-?>

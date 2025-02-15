@@ -6,4 +6,3 @@
         setcookie('event', $_POST['event']);
     }
     header('location: /');
-?>
